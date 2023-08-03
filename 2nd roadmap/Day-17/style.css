@@ -1,0 +1,15 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin: 10%;
+    padding:10px;
+    background-color: rgb(194, 194, 207);
+}
+#countdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px;
+    color: black;
+    font-size: 100px;
+}

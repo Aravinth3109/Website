@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <label for="input">Enter a value:</label>
+    <input type="text" id="input">
+    <button onclick="displayValue()">Display</button>
+    <br>
+    <span id="output"></span>
+    
+    <script>
+      function displayValue() {
+        const input = document.getElementById("input").value;
+        const output = document.getElementById("output");
+        output.textContent = input;
+      }
+    </script>
+  </body>
+</html>

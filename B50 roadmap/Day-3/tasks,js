@@ -1,0 +1,54 @@
+// Task (Do the following problems in function,Anonyomus function,arrow function,IIFE function)
+// 1.Print odd numbers in an array
+//1.Function Method:
+var arr = [12, 13, 14, 15, 16];
+var result = [];
+function odd(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 != 0) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+console.log(odd(arr));
+
+//2.Anonyomus function:
+var arr = [12, 13, 14, 15, 16];
+var result = [];
+var odd = function (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 != 0) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+};
+console.log(odd(arr));
+    
+//3.IIFE function
+    (function odd(arr) {
+        var result = [];
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] % 2 != 0) {
+            result.push(arr[i]);
+          }
+        }
+        console.log(result);
+      })([12, 13, 14, 15, 16]);
+
+//4.arrow function
+
+  let oddNum = (arr) => {
+    var result = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 != 0) {
+          result.push(arr[i]);
+        }
+    }
+    return result;
+ }
+ console.log(oddNum([1, 2, 3, 4, 5, 6, 7, 8, 9, 55, 97]));
+ //--------------------------------------------------------------------------------------------------
+ //2.Convert all the strings to title caps in a string array
+ //1.Function Method:

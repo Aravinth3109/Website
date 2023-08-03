@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+
+    <body>
+        <script>
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+
+            xhr.onload = function () {
+                let response = JSON.parse(xhr.responseText);
+                for(let index=0; index<response.length; index++){
+                    console.log(response[index]);
+                }
+            };
+
+            xhr.send();
+        </script>
+    </body>
+</html>
